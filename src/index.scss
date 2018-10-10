@@ -1,3 +1,29 @@
-html {
+$theme: #209cee;
+$grey: #b5b5b5;
+
+body {
   font-family: 'Raleway', sans-serif;
+}
+
+.line {
+  height: 10px;
+}
+
+.hr{
+  border-bottom: 1px solid $theme;
+  margin: 0 1.5rem;
+}
+
+.summary, .experience, .education, .projects, .skills, .awards, .languages{
+  margin-bottom: 1.5rem;
+
+  .title{
+    padding: .5em 0;
+  }
+}
+
+.experience, .education, .projects, .awards{
+  .item{
+    padding: .5em 0;
+  }
 }
