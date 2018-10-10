@@ -1,0 +1,18 @@
+body {
+  font-family: 'Raleway', sans-serif; }
+
+.line {
+  height: 10px; }
+
+.hr {
+  border-bottom: 1px solid #209cee;
+  margin: 0 1.5rem; }
+
+.summary, .experience, .education, .projects, .skills, .awards, .languages {
+  margin-bottom: 1.5rem; }
+  .summary .title, .experience .title, .education .title, .projects .title, .skills .title, .awards .title, .languages .title {
+    padding: .5em 0; }
+
+.experience .item, .education .item, .projects .item, .awards .item {
+  padding: .5em 0; }
+
