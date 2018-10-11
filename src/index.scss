@@ -10,7 +10,7 @@ body {
 }
 
 .hr{
-  border-bottom: 1px solid $theme;
+  border-bottom: 10px solid $theme;
   margin: 0 1.5rem;
 }
 
@@ -19,11 +19,35 @@ body {
 
   .title{
     padding: .5em 0;
+    border-bottom: 1px solid $theme;
   }
 }
 
-.experience, .education, .projects, .awards{
+.experience, .education, .projects, .skills, .awards{
   .item{
     padding: .5em 0;
+  }
+}
+
+.profile {
+  .image{
+    margin: 0 auto;
+  }
+  svg{
+    fill: $grey;
+  }
+}
+
+/* Query for mobile only*/
+@media screen and (max-width: 768px){
+  .profile {
+    text-align: center;
+  }
+}
+
+/* Query for desktop only*/
+@media screen and (min-width: 1023px){
+  .has-text-right-in-desktop {
+    text-align: right;
   }
 }
