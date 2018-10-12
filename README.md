@@ -9,9 +9,11 @@
 ## Screenshoot
 
 + **DESKTOP**
+
 ![Desktop](https://raw.githubusercontent.com/mazipan/bulma-resume-template/master/screenshoot-desktop.png)
 
 + **MOBILE**
+
 ![Mobile](https://raw.githubusercontent.com/mazipan/bulma-resume-template/master/screenshoot-mobile.png)
 
 
