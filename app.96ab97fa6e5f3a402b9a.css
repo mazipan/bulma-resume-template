@@ -316,10 +316,10 @@ a {
   a strong {
     color: currentColor; }
   a:hover {
-    color: #363636; }
+    color: #ff93d1; }
 
 code {
-  background-color: #282a36;
+  background-color: #44475a;
   color: #ff3860;
   font-size: 0.875em;
   font-weight: normal;
@@ -1184,16 +1184,16 @@ a.box:active {
     margin-left: calc(-0.375em - 1px);
     margin-right: calc(-0.375em - 1px); }
   .button:hover, .button.is-hovered {
-    border-color: #b5b5b5;
-    color: #363636; }
+    border-color: #ff93d1;
+    color: #ff93d1; }
   .button:focus, .button.is-focused {
-    border-color: #3273dc;
-    color: #363636; }
+    border-color: #ff60bb;
+    color: #ff60bb; }
     .button:focus:not(:active), .button.is-focused:not(:active) {
       box-shadow: 0 0 0 0.125em rgba(255, 121, 198, 0.25); }
   .button:active, .button.is-active {
-    border-color: #4a4a4a;
-    color: #363636; }
+    border-color: #ff93d1;
+    color: #ff93d1; }
   .button.is-text {
     background-color: transparent;
     border-color: transparent;
@@ -3655,7 +3655,7 @@ a.tag:hover {
     justify-content: center;
     padding: 0 0.75em; }
     .breadcrumb a:hover {
-      color: #363636; }
+      color: #ff93d1; }
   .breadcrumb li {
     align-items: center;
     display: flex; }
@@ -4990,12 +4990,12 @@ a.navbar-item,
   .pagination-previous:hover,
   .pagination-next:hover,
   .pagination-link:hover {
-    border-color: #b5b5b5;
-    color: #363636; }
+    border-color: #ff93d1;
+    color: #ff93d1; }
   .pagination-previous:focus,
   .pagination-next:focus,
   .pagination-link:focus {
-    border-color: #3273dc; }
+    border-color: #ff60bb; }
   .pagination-previous:active,
   .pagination-next:active,
   .pagination-link:active {
@@ -5100,8 +5100,8 @@ a.navbar-item,
     margin-bottom: -1px;
     padding: 0.5em; }
     .panel-tabs a.is-active {
-      border-bottom-color: #4a4a4a;
-      color: #363636; }
+      border-bottom-color: #ff93d1;
+      color: #ff93d1; }
 
 .panel-list a {
   color: #f8f8f2; }
@@ -5124,7 +5124,7 @@ a.navbar-item,
     flex-wrap: wrap; }
   .panel-block.is-active {
     border-left-color: #ff79c6;
-    color: #363636; }
+    color: #ff93d1; }
     .panel-block.is-active .panel-icon {
       color: #ff79c6; }
 
