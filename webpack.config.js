@@ -1,11 +1,8 @@
 const webpack = require('webpack')
 const path = require('path')
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const CompressionPlugin = require("compression-webpack-plugin")
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin")
-const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const SRC = path.resolve(__dirname, 'src');
 const NODE_ENV = process.env.NODE_ENV;

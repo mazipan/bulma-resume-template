@@ -1,5 +1,7 @@
-$theme: #209cee;
+$theme: #bd93f9;
 $grey: #b5b5b5;
+
+@import "~bulma-dracula/src/bulma-dracula.scss";
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -12,6 +14,10 @@ body {
 .hr{
   border-bottom: 10px solid $theme;
   margin: 0 1.5rem;
+}
+
+.section{
+  padding: 3rem 1.5rem 1rem;
 }
 
 .summary, .experience, .education, .projects, .skills, .awards, .languages{
@@ -36,6 +42,21 @@ body {
   svg{
     fill: $grey;
   }
+}
+
+.social-icon{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  a{
+    display: flex;
+    align-items: center;
+  }
+}
+
+.footer{
+  padding: 3rem 1.5rem 1rem;
 }
 
 /* Query for mobile only*/
