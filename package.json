@@ -48,6 +48,6 @@
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
-    "bulma-dracula": "^1.0.1"
+    "bulma-dracula": "^1.0.2"
   }
 }
