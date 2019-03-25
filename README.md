@@ -10,9 +10,9 @@
 
 ## Screenshoot
 
-|              Desktop                |              Mobile Web             |
-| :---------------------------------: | :---------------------------------: |
-| ![Desktop](screenshoot-desktop.png) | ![Mobile](screenshoot-mobile.png) |
+|              Desktop                |
+| :---------------------------------: |
+| ![Desktop](screenshoot-desktop.png) |
 
 
 -----
