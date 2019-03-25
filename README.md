@@ -10,15 +10,11 @@
 
 ## Screenshoot
 
-+ **DESKTOP**
-
-![Desktop](https://raw.githubusercontent.com/mazipan/bulma-resume-template/master/screenshoot-desktop.png)
-
-+ **MOBILE**
-
-![Mobile](https://raw.githubusercontent.com/mazipan/bulma-resume-template/master/screenshoot-mobile.png)
+|              Desktop                |              Mobile Web             |
+| :---------------------------------: | :---------------------------------: |
+| ![Desktop](screenshoot-desktop.png) | ![Mobile](screenshoot-mobile.png) |
 
 
 -----
 
-Copyright © 2018 by Irfan Maulana
+Copyright © 2018-2019 by Irfan Maulana
