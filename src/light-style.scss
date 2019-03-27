@@ -1,0 +1,77 @@
+$theme: #00d1b2;
+$grey: #b5b5b5;
+
+@import "~bulma/bulma";
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.line {
+  height: 10px;
+}
+
+.hr{
+  border-bottom: 10px solid $theme;
+  margin: 0 1.5rem;
+}
+
+.section{
+  padding: 3rem 1.5rem 1rem;
+}
+
+.summary, .experience, .education, .projects, .skills, .awards, .languages{
+  margin-bottom: 1.5rem;
+
+  .title{
+    padding: .5em 0;
+    border-bottom: 1px solid $theme;
+  }
+}
+
+.experience, .education, .projects, .skills, .awards{
+  .item{
+    padding: .5em 0;
+  }
+}
+
+.profile {
+  .image{
+    margin: 0 auto;
+  }
+  svg{
+    fill: $grey;
+  }
+}
+
+.social-icon{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  a{
+    display: flex;
+    align-items: center;
+  }
+}
+
+.footer{
+  padding: 3rem 1.5rem 1rem;
+}
+
+/* Query for mobile only*/
+@media screen and (max-width: 768px){
+  .profile {
+    text-align: center;
+  }
+  .social-icon{
+    justify-content: center;
+  }
+}
+
+/* Query for desktop only*/
+@media screen and (min-width: 1023px){
+  .has-text-right-in-desktop {
+    text-align: right;
+  }
+}

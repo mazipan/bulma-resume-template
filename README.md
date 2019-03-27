@@ -6,13 +6,14 @@
 
 ## Live Demo
 
-[https://mazipan.github.io/bulma-resume-template/](https://mazipan.github.io/bulma-resume-template/)
++ Dark Theme: [/bulma-resume-template/](https://mazipan.github.io/bulma-resume-template/)
++ Light Theme: [/bulma-resume-template/light.html](https://mazipan.github.io/bulma-resume-template/light.html)
 
 ## Screenshoot
 
-|              Desktop                |
-| :---------------------------------: |
-| ![Desktop](screenshoot-desktop.png) |
+|              Dracula Theme          |              Light Theme          |
+| :---------------------------------: | :-------------------------------: |
+| ![Dracula](screenshoot-dracula.png) | ![Light](screenshoot-light.png)   |
 
 
 -----

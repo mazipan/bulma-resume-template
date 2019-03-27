@@ -7,8 +7,6 @@ const CompressionPlugin = require("compression-webpack-plugin")
 const SRC = path.resolve(__dirname, 'src');
 const NODE_ENV = process.env.NODE_ENV;
 
-// require('es6-promise').polyfill()
-
 const isDev = () => {
   return (NODE_ENV === 'development');
 };
@@ -22,10 +20,10 @@ const setPath = function(folderName) {
 };
 
 const extractHTML = new HtmlWebpackPlugin({
-  title: 'History Search',
   filename: 'index.html',
   inject: true,
   template: setPath('/src/index.ejs'),
+  chunks: ['dracula'],
   minify: {
     removeAttributeQuotes: true,
     collapseWhitespace: true,
@@ -37,9 +35,43 @@ const extractHTML = new HtmlWebpackPlugin({
   environment: process.env.NODE_ENV
 });
 
+const extractHTMLLight = new HtmlWebpackPlugin({
+  filename: 'light.html',
+  inject: true,
+  template: setPath('/src/light.ejs'),
+  chunks: ['light'],
+  minify: {
+    removeAttributeQuotes: true,
+    collapseWhitespace: true,
+    html5: true,
+    minifyCSS: true,
+    removeComments: true,
+    removeEmptyAttributes: true
+  },
+  environment: process.env.NODE_ENV
+});
+
+const plugins = [
+  new webpack.DefinePlugin({
+    'process.env': {
+      isStaging: (isDev() || NODE_ENV === 'staging'),
+      NODE_ENV: '"'+NODE_ENV+'"'
+    }
+  }),
+  extractHTML,
+  extractHTMLLight,
+  new MiniCssExtractPlugin({
+    filename: "[name].[hash].css"
+  }),
+  new CompressionPlugin({
+    algorithm: 'gzip'
+  })
+]
+
 module.exports = {
   entry: {
-    app: './src/index.js'
+    dracula: './src/dracula-entry.js',
+    light: './src/light-entry.js'
   },
   output: {
     path: isDev() ? path.resolve(__dirname) : setPath('dist'),
@@ -73,9 +105,8 @@ module.exports = {
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
-          isDev() ? 'style-loader' : MiniCssExtractPlugin.loader,
+          MiniCssExtractPlugin.loader,
           'css-loader',
-          // 'postcss-loader',
           'sass-loader',
         ],
       },
@@ -91,19 +122,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-    new webpack.DefinePlugin({
-      'process.env': {
-        isStaging: (isDev() || NODE_ENV === 'staging'),
-        NODE_ENV: '"'+NODE_ENV+'"'
-      }
-    }),
-    extractHTML,
-    new MiniCssExtractPlugin({
-      filename: "[name].[hash].css"
-    }),
-    new CompressionPlugin({
-      algorithm: 'gzip'
-    })
-  ]
+  plugins,
 }
