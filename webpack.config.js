@@ -19,37 +19,25 @@ const setPath = function(folderName) {
   return path.join(__dirname, folderName);
 };
 
-const extractHTML = new HtmlWebpackPlugin({
-  filename: 'index.html',
-  inject: true,
-  template: setPath('/src/index.ejs'),
-  chunks: ['dracula'],
-  minify: {
-    removeAttributeQuotes: true,
-    collapseWhitespace: true,
-    html5: true,
-    minifyCSS: true,
-    removeComments: true,
-    removeEmptyAttributes: true
-  },
-  environment: process.env.NODE_ENV
-});
-
-const extractHTMLLight = new HtmlWebpackPlugin({
-  filename: 'light.html',
-  inject: true,
-  template: setPath('/src/light.ejs'),
-  chunks: ['light'],
-  minify: {
-    removeAttributeQuotes: true,
-    collapseWhitespace: true,
-    html5: true,
-    minifyCSS: true,
-    removeComments: true,
-    removeEmptyAttributes: true
-  },
-  environment: process.env.NODE_ENV
-});
+const htmlPlugin = (inputTemplatePath, outputFileName, chunkPattern) => {
+  return new HtmlWebpackPlugin({
+    filename: outputFileName,
+    inject: true,
+    template: setPath(inputTemplatePath),
+    chunks: [
+      chunkPattern
+    ],
+    minify: {
+      removeAttributeQuotes: true,
+      collapseWhitespace: true,
+      html5: true,
+      minifyCSS: true,
+      removeComments: true,
+      removeEmptyAttributes: true
+    },
+    environment: process.env.NODE_ENV
+  });
+}
 
 const plugins = [
   new webpack.DefinePlugin({
@@ -58,8 +46,8 @@ const plugins = [
       NODE_ENV: '"'+NODE_ENV+'"'
     }
   }),
-  extractHTML,
-  extractHTMLLight,
+  htmlPlugin('/src/index.ejs', 'index.html', 'dracula'),
+  htmlPlugin('/src/light.ejs', 'light.html', 'light'),
   new MiniCssExtractPlugin({
     filename: "[name].[hash].css"
   }),
@@ -83,12 +71,7 @@ module.exports = {
     runtimeChunk: false,
     splitChunks: {
       chunks: "all",
-    },
-    // minimize: !isDev(),
-    // minimizer: isDev() ? [
-    //   new UglifyJsPlugin(),
-    //   new OptimizeCSSAssetsPlugin({})
-    // ] : []
+    }
   },
   resolve: {
     extensions: ['.js', '.json'],
@@ -112,7 +95,7 @@ module.exports = {
       },
       {
         test: /\.m?js$/,
-        exclude: /(node_modules|bower_components)/,
+        exclude: /(node_modules)/,
         use: {
           loader: 'babel-loader',
           options: {
