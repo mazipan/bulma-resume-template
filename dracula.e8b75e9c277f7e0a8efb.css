@@ -2784,7 +2784,7 @@ a.box:active {
     font-size: 14px; }
 
 .label {
-  color: #363636;
+  color: #f8f8f2;
   display: block;
   font-size: 1rem;
   font-weight: 700; }
@@ -3702,7 +3702,7 @@ a.tag:hover {
 .card {
   background-color: white;
   box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-  color: #f8f8f2;
+  color: #282a36;
   max-width: 100%;
   position: relative; }
 
