@@ -2,7 +2,7 @@
 
 💼 Free resume page template with bulma css
 
-[![Travis](https://img.shields.io/travis/mazipan/bulma-resume-template.svg)](https://travis-ci.org/mazipan/bulma-resume-template) [![Greenkeeper badge](https://badges.greenkeeper.io/mazipan/bulma-resume-template.svg)](https://greenkeeper.io/)
+[![Travis](https://img.shields.io/travis/mazipan/bulma-resume-template.svg)](https://travis-ci.org/mazipan/bulma-resume-template) ![Dependencies](https://img.shields.io/david/mazipan/bulma-resume-template.svg)
 
 ## Live Demo
 
