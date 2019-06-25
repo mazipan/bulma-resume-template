@@ -11,10 +11,12 @@
 
 ## Feature
 
-+ Hot Module Replacement in local development
++ Hot Module Replacement (HMR) in local development
 + Optimized assets (HTML minified, CSS purge and minified, JS minified)
 + Easy to update content
 + Available in light and dark theme version
++ Mobile friendly interface
++ Lightning speed load time performance
 
 ## Screenshoot
 
@@ -22,6 +24,9 @@
 | :---------------------------------: | :-------------------------------: |
 | ![Dracula](screenshoot-dracula.png) | ![Light](screenshoot-light.png)   |
 
+## Lighthouse Audit
+
+![Audit](screenshoot-lighthouse.png)
 
 ## Update with your own!
 
