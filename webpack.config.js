@@ -1,12 +1,21 @@
 const webpack = require('webpack')
 const path = require('path')
+const glob = require('glob')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const CompressionPlugin = require("compression-webpack-plugin")
+const TerserJSPlugin = require('terser-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const PurgecssPlugin = require('purgecss-webpack-plugin')
 
 const content = require('./src/data')
 
 const SRC = path.resolve(__dirname, 'src');
+
+const PATHS = {
+  src: SRC
+}
+
 const NODE_ENV = process.env.NODE_ENV;
 
 const isDev = () => {
@@ -47,7 +56,6 @@ const htmlPlugin = (inputTemplatePath, outputFileName, chunkPattern) => {
 const plugins = [
   new webpack.DefinePlugin({
     'process.env': {
-      isStaging: (isDev() || NODE_ENV === 'staging'),
       NODE_ENV: '"'+NODE_ENV+'"'
     }
   }),
@@ -55,6 +63,9 @@ const plugins = [
   htmlPlugin('/src/light.ejs', 'light.html', 'light'),
   new MiniCssExtractPlugin({
     filename: "[name].[hash].css"
+  }),
+  new PurgecssPlugin({
+    paths: glob.sync(`${PATHS.src}/*`)
   }),
   new CompressionPlugin({
     algorithm: 'gzip'
@@ -73,6 +84,7 @@ module.exports = {
   },
   mode: isDev() ? 'development' : 'production',
   optimization:{
+    minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
     runtimeChunk: false,
     splitChunks: {
       chunks: "all",

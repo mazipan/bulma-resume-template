@@ -9,11 +9,19 @@
 + Dark Theme: [/bulma-resume-template/](https://mazipan.github.io/bulma-resume-template/)
 + Light Theme: [/bulma-resume-template/light.html](https://mazipan.github.io/bulma-resume-template/light.html)
 
+## Feature
+
++ Hot Module Replacement in local development
++ Optimized assets (HTML minified, CSS purge and minified, JS minified)
++ Easy to update content
++ Available in light and dark theme version
+
 ## Screenshoot
 
 |              Dracula Theme          |              Light Theme          |
 | :---------------------------------: | :-------------------------------: |
 | ![Dracula](screenshoot-dracula.png) | ![Light](screenshoot-light.png)   |
+
 
 ## Update with your own!
 
