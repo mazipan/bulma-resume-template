@@ -8,10 +8,22 @@ export default {
     mail: 'mazipanneh@gmail.com'
   },
   social: {
-    facebook: {},
-    twitter: {},
-    linkedin: {},
-    github: {}
+    facebook: {
+      name: 'mazipanneh',
+      link: 'https://web.facebook.com/mazipanneh'
+    },
+    twitter: {
+      name: '@maz_ipan',
+      link: 'https://twitter.com/Maz_Ipan'
+    },
+    linkedin: {
+      name: 'in/mazipan',
+      link: 'https://www.linkedin.com/in/mazipan'
+    },
+    github: {
+      name: 'mazipan',
+      link: 'https://github.com/mazipan'
+    }
   },
   summary: 'An experience software engineer especially in frontend side. Having deep knowledge in HTML, CSS (with it\'s pre-processor) and JavaScript with various framework. Write good quality, well tested, and fast delivered code. Experience in architecting frontend codebase.<br> Well known figure in programming community, open-source creator, and writer for many technical article.',
   experiences: [
@@ -19,14 +31,14 @@ export default {
       company: 'Tokopedia',
       location: 'Jakarta',
       title: 'Principal Engineer for Frontend',
-      duration: 'JUN 2019 - PRESENT',
+      period: 'JUN 2019 - PRESENT',
       jobdesc: [],
     },
     {
       company: 'Bizzy Indonesia',
       location: 'Jakarta',
       title: 'Software Architect for Frontend',
-      duration: 'FEB 2019 - JUN 2019',
+      period: 'FEB 2019 - JUN 2019',
       jobdesc: [
         'Split monolith frontend codebase into some different repository',
         'Introduce many best practices in coding Vue.js and Nuxt.js',
@@ -39,7 +51,7 @@ export default {
       company: 'Bizzy Indonesia',
       location: 'Jakarta',
       title: 'Software Development Engineer',
-      duration: 'JUL 2018 - FEB 2019',
+      period: 'JUL 2018 - FEB 2019',
       jobdesc: [
         'Helping small team in transaction process to develop new features and fixing bugs',
         'Setup and spread about unit test adoption in frontend codebase'
@@ -49,7 +61,7 @@ export default {
       company: 'Blibli.com',
       location: 'Jakarta',
       title: 'Sr. Software Development Engineer',
-      duration: 'JAN 2017 - JUN 2018',
+      period: 'JAN 2017 - JUN 2018',
       jobdesc: [
         'Helping migrate frontend codebase from JSP + AngularJS into modern codebase using Vue.js',
         'Helping Blibli Pulsa, Blibli Travels, etc going live to production'
@@ -59,7 +71,7 @@ export default {
       company: 'Blibli.com',
       location: 'Jakarta',
       title: 'Software Development Engineer',
-      duration: 'OCT 2015 - JAN 2017',
+      period: 'OCT 2015 - JAN 2017',
       jobdesc: [
         'Maintenance, bug fixing, adding new feature and improvement in our website.',
         'Doing frontend stuff with AngularJS, jQuery, Vanilla Javascript, JSP, JSTL, SASS, CSS3.',
@@ -70,7 +82,7 @@ export default {
       company: 'SML Technologies',
       location: 'Jakarta',
       title: 'Java Developer',
-      duration: 'AUG 2013 - OCT 2015',
+      period: 'AUG 2013 - OCT 2015',
       jobdesc: [
         'Develop java desktop application with JIDE and JDAF Framework',
         'Develop front-end web application with Sencha ExtJs Framework.',
@@ -79,7 +91,13 @@ export default {
     }
   ],
   educations: [
-  
+    {
+      name: 'Muhammadiyah University',
+      city: 'Jakarta',
+      degree: 'Bachelor Degree',
+      period: '2009 - 2013',
+      faculty: 'Bachelor of Informatics Engineering'
+    }
   ],
   projetcs: [
   
