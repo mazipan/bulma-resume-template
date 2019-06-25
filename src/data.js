@@ -100,7 +100,21 @@ export default {
     }
   ],
   projetcs: [
-  
+    {
+      title: 'Bizzy Front-office and Back-office',
+      company: 'Bizzy Indonesia',
+      period: 'JUL 2018 - JUN 2019'
+    },
+    {
+      title: 'Blibli.com Travel, Blibli.com Pulsa, Multi-Merchant Feature',
+      company: 'Blibli.com',
+      period: 'OCT 2015 - JUN 2018'
+    },
+    {
+      title: 'Servo Analytica 4, Traversa R3 Routing Management, SIAGA Dashboard, Servo Availability Web, Dashboard Builder',
+      company: 'SML Technologies',
+      period: 'AUG 2013 - OCT 2015'
+    }
   ],
   skills: [
     {
