@@ -27,35 +27,55 @@ export default {
       location: 'Jakarta',
       title: 'Software Architect for Frontend',
       duration: 'FEB 2019 - JUN 2019',
-      jobdesc: [],
+      jobdesc: [
+        'Split monolith frontend codebase into some different repository',
+        'Introduce many best practices in coding Vue.js and Nuxt.js',
+        'Creating many common utilities for easier sharing code that managed in monorepo using Lerna',
+        'Monitoring web performance',
+        'Actively sharing about how to be effective, good quality, and excellent software development process especially in frontend side.'
+      ],
     },
     {
       company: 'Bizzy Indonesia',
       location: 'Jakarta',
       title: 'Software Development Engineer',
       duration: 'JUL 2018 - FEB 2019',
-      jobdesc: [],
+      jobdesc: [
+        'Helping small team in transaction process to develop new features and fixing bugs',
+        'Setup and spread about unit test adoption in frontend codebase'
+      ],
     },
     {
       company: 'Blibli.com',
       location: 'Jakarta',
       title: 'Sr. Software Development Engineer',
       duration: 'JAN 2017 - JUN 2018',
-      jobdesc: [],
+      jobdesc: [
+        'Helping migrate frontend codebase from JSP + AngularJS into modern codebase using Vue.js',
+        'Helping Blibli Pulsa, Blibli Travels, etc going live to production'
+      ],
     },
     {
       company: 'Blibli.com',
       location: 'Jakarta',
       title: 'Software Development Engineer',
       duration: 'OCT 2015 - JAN 2017',
-      jobdesc: [],
+      jobdesc: [
+        'Maintenance, bug fixing, adding new feature and improvement in our website.',
+        'Doing frontend stuff with AngularJS, jQuery, Vanilla Javascript, JSP, JSTL, SASS, CSS3.',
+        'Doing small stuff in backend using SpringMVC.'
+      ],
     },
     {
       company: 'SML Technologies',
       location: 'Jakarta',
       title: 'Java Developer',
       duration: 'AUG 2013 - OCT 2015',
-      jobdesc: [],
+      jobdesc: [
+        'Develop java desktop application with JIDE and JDAF Framework',
+        'Develop front-end web application with Sencha ExtJs Framework.',
+        'Develop back-end Rest API with EJB and JPA.'
+      ],
     }
   ],
   educations: [
