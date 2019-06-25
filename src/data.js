@@ -99,7 +99,7 @@ module.exports = {
       faculty: 'Bachelor of Informatics Engineering'
     }
   ],
-  projetcs: [
+  projects: [
     {
       title: 'Bizzy Front-office and Back-office',
       company: 'Bizzy Indonesia',
