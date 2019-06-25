@@ -103,9 +103,25 @@ export default {
   
   ],
   skills: [
-  
+    {
+      name: 'Javascript',
+      progress: 70
+    },
+    {
+      name: 'CSS',
+      progress: 70
+    },
+    {
+      name: 'HTML',
+      progress: 70
+    },
+    {
+      name: 'FE Development',
+      progress: 70
+    }
   ],
   languages: [
-  
+    'Bahasa Indonesia', 
+    'English'
   ]
 }
