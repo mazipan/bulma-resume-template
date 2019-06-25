@@ -15,6 +15,9 @@
 | :---------------------------------: | :-------------------------------: |
 | ![Dracula](screenshoot-dracula.png) | ![Light](screenshoot-light.png)   |
 
+## Update with your own!
+
+Just go update file [data.js](https://github.com/mazipan/bulma-resume-template/blob/master/src/data.js) with your own data.
 
 -----
 
