@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   profile: {
     name: 'Irfan Maulana',
     title: 'Principal Engineer for Frontend at Tokopedia',
@@ -135,7 +135,7 @@ export default {
     }
   ],
   languages: [
-    'Bahasa Indonesia', 
+    'Bahasa Indonesia',
     'English'
   ]
 }

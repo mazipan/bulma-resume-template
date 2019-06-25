@@ -4,6 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const CompressionPlugin = require("compression-webpack-plugin")
 
+const content = require('./src/data')
+
 const SRC = path.resolve(__dirname, 'src');
 const NODE_ENV = process.env.NODE_ENV;
 
@@ -27,6 +29,9 @@ const htmlPlugin = (inputTemplatePath, outputFileName, chunkPattern) => {
     chunks: [
       chunkPattern
     ],
+    templateParameters: {
+      content
+    },
     minify: {
       removeAttributeQuotes: true,
       collapseWhitespace: true,
