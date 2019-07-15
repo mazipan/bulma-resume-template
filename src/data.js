@@ -25,7 +25,7 @@ module.exports = {
       link: 'https://github.com/mazipan'
     }
   },
-  summary: 'An experience software engineer especially in frontend side. Having deep knowledge in HTML, CSS (with it\'s pre-processor) and JavaScript with various framework. Write good quality, well tested, and fast delivered code. Experience in architecting frontend codebase.<br> Well known figure in programming community, open-source creator, and writer for many technical article.',
+  summary: `An experienced software engineer especially in frontend side.<br/>Having deep knowledge in HTML, CSS (with its pre-processor) and JavaScript with the various framework. Write good quality, well tested, and fast delivered code.<br/>Experience in architecting frontend codebase.<br/>A well-known figure in the programming community, open-source creator, and writer for many technical articles.`,
   experiences: [
     {
       company: 'Tokopedia',
