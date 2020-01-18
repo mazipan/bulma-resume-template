@@ -51,7 +51,7 @@
     "bulma-dracula": "^1.0.3",
     "html2canvas": "^1.0.0-rc.1",
     "jspdf": "^1.5.3",
-    "purgecss-webpack-plugin": "^1.5.0",
+    "purgecss-webpack-plugin": "^2.0.0",
     "terser-webpack-plugin": "^2.0.0"
   }
 }
