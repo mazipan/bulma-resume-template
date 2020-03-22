@@ -197,9 +197,7 @@
                     <div class="languages">
                         <div class="title is-size-5 has-text-primary has-text-weight-bold">LANGUAGES</div>
                         <div class="wrapper">
-                            <% content.languages.forEach(function(lang){ %>
-                                <%= lang %>,
-                            <% }); %>
+                            <%= content.languages.join(', ') %>
                         </div>
                     </div>
                 </div>
