@@ -1,7 +1,7 @@
 $theme: #bd93f9;
 $grey: #b5b5b5;
 
-@import "~bulma-dracula/src/bulma-dracula.scss";
+@import '~bulma-dracula/src/bulma-dracula';
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -69,8 +69,19 @@ body {
   .profile {
     text-align: center;
   }
-  .social-icon{
+
+  .social-icon {
     justify-content: center;
+    padding: .25rem 0;
+
+    a {
+      font-size: 1.25rem;
+    }
+
+    svg {
+      height: 3rem;
+      width: 3rem;
+    }
   }
 }
 
