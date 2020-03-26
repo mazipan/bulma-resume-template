@@ -1,0 +1,88 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.line {
+  height: 10px;
+}
+
+.hr{
+  border-bottom: 10px solid var(--theme-color);
+  margin: 0 1.5rem;
+}
+
+.section{
+  padding: 3rem 1.5rem 1rem;
+}
+
+.summary, .experience, .education, .projects, .skills, .awards, .languages{
+  margin-bottom: 1.5rem;
+
+  .title{
+    padding: .5em 0;
+    border-bottom: 1px solid var(--theme-color);
+  }
+}
+
+.experience, .education, .projects, .skills, .awards{
+  .item{
+    padding: .5em 0;
+  }
+}
+
+.profile {
+  .image{
+    margin: 0 auto;
+  }
+  svg{
+    fill: var(--thin-color);
+  }
+}
+
+.social-icon{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  a{
+    display: flex;
+    align-items: center;
+  }
+
+  svg{
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+.footer{
+  padding: 3rem 1.5rem 1rem;
+}
+
+/* Query for mobile only*/
+@media screen and (max-width: 768px){
+  .profile {
+    text-align: center;
+  }
+
+  .social-icon {
+    justify-content: center;
+    padding: .25rem 0;
+
+    a {
+      font-size: 1.25rem;
+    }
+
+    svg {
+      height: 3rem;
+      width: 3rem;
+    }
+  }
+}
+
+/* Query for desktop only*/
+@media screen and (min-width: 768px){
+  .has-text-right-in-desktop {
+    text-align: right;
+  }
+}
