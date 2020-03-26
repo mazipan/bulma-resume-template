@@ -74,7 +74,7 @@ body {
 }
 
 /* Query for desktop only*/
-@media screen and (min-width: 1023px){
+@media screen and (min-width: 768px){
   .has-text-right-in-desktop {
     text-align: right;
   }
