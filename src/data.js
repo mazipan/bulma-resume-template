@@ -1,4 +1,12 @@
 module.exports = {
+  icon: [
+    {
+      size: 16,
+      url: 'https://mazipan.github.io/favicon/favicon-16x16.png',
+    }
+  ],
+  pageTitle: 'CV - Irfan Maulana | Bulma Resume Template',
+  pageDesc: 'Free Resume/CV Page Template with Bulma CSS by Irfan Maulana',
   profile: {
     name: 'Irfan Maulana',
     title: 'Principal Engineer for Frontend at Tokopedia',
