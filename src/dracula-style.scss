@@ -1,6 +1,11 @@
 $theme: #bd93f9;
 $grey: #b5b5b5;
 
+:root {
+  --theme-color: #bd93f9;
+  --thin-color: #b5b5b5;
+}
+
 @import '~bulma-dracula/src/bulma-dracula';
 
 body {
