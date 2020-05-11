@@ -65,7 +65,7 @@ const plugins = [
     filename: "[name].[hash].css"
   }),
   new PurgecssPlugin({
-    paths: glob.sync(`${PATHS.src}/*`)
+    paths: glob.sync(`${PATHS.src}/*`, { nodir: true })
   }),
   new CompressionPlugin({
     algorithm: 'gzip'
