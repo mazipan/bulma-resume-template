@@ -60,7 +60,7 @@ const plugins = [
       NODE_ENV: '"'+NODE_ENV+'"'
     }
   }),
-  htmlPlugin('/src/index.ejs', 'index.html', 'dracula'),
+  htmlPlugin('/src/index.ejs', 'index.html', 'dark'),
   htmlPlugin('/src/light.ejs', 'light.html', 'light'),
   new MiniCssExtractPlugin({
     filename: "[name].[hash].css"
@@ -75,7 +75,7 @@ const plugins = [
 
 module.exports = {
   entry: {
-    dracula: './src/dracula-entry.js',
+    dark: './src/dark-entry.js',
     light: './src/light-entry.js'
   },
   output: {

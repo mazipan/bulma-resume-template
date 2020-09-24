@@ -98,6 +98,11 @@ module.exports = {
 }
 ```
 
+## Support me
+
+- Via [trakteer](https://trakteer.id/mazipan)
+- Direct support, [send me an email](mailto:mazipanneh@gmail.com)
+
 -----
 
 Copyright © 2018-2019 by Irfan Maulana
