@@ -9,7 +9,7 @@
 		"build-local:sass": "node-sass --importer node_modules/node-sass-magic-importer/dist/cli.js src/scss -o dist/css",
 		"build:eleventy": "NODE_ENV=production eleventy",
 		"watch:eleventy": "cross-env NODE_ENV=development eleventy --watch --serve",
-		"start": "npm-run-all build-local:sass --parallel watch:*",
+		"dev": "npm-run-all build-local:sass --parallel watch:*",
 		"build": "npm-run-all build:*",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
