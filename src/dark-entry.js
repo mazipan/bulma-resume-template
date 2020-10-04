@@ -1,1 +1,0 @@
-require('./dark-style.scss')
