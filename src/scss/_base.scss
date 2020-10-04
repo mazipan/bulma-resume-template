@@ -6,61 +6,73 @@ body {
   height: 10px;
 }
 
-.hr{
+.hr {
   border-bottom: 10px solid var(--theme-color);
   margin: 0 1.5rem;
 }
 
-.section{
+.section {
   padding: 3rem 1.5rem 1rem;
 }
 
-.summary, .experience, .education, .projects, .skills, .awards, .languages{
+.summary,
+.experience,
+.education,
+.projects,
+.skills,
+.awards,
+.languages {
   margin-bottom: 1.5rem;
 
-  .title{
+  .title {
     padding: .5em 0;
     border-bottom: 1px solid var(--theme-color);
   }
 }
 
-.experience, .education, .projects, .skills, .awards{
-  .item{
+.experience,
+.education,
+.projects,
+.skills,
+.awards {
+  .item {
     padding: .5em 0;
   }
 }
 
 .profile {
-  .image{
+  .image {
     margin: 0 auto;
   }
-  svg{
-    fill: var(--thin-color);
+
+  svg {
+    fill: var(--theme-color);
   }
 }
 
-.social-icon{
+.social-icon {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 
-  a{
+  a {
     display: flex;
     align-items: center;
+    color: var(--theme-color);
   }
 
-  svg{
-    height: 2rem;
-    width: 2rem;
+  svg {
+    height: 1.5rem;
+    width: 1.5rem;
   }
 }
 
-.footer{
+.footer {
   padding: 3rem 1.5rem 1rem;
 }
 
 /* Query for mobile only*/
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .profile {
     text-align: center;
   }
@@ -68,26 +80,17 @@ body {
   .social-icon {
     justify-content: center;
     padding: .25rem 0;
-
-    a {
-      font-size: 1.25rem;
-    }
-
-    svg {
-      height: 3rem;
-      width: 3rem;
-    }
   }
 }
 
 /* Query for desktop only*/
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .has-text-right-in-desktop {
     text-align: right;
   }
 }
 
 .ads-square {
-	min-width: 250px;
-	min-height: 100px;
+  min-width: 250px;
+  min-height: 100px;
 }
