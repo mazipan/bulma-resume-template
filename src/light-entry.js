@@ -1,1 +1,0 @@
-require('./light-style.scss')
