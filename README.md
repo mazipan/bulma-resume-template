@@ -41,7 +41,7 @@ module.exports = {
     title: 'Principal Engineer for Frontend at Tokopedia',
     photo: 'https://avatars2.githubusercontent.com/u/7221389?s=300&v=4', // 300x300px
     city: 'Jakarta, Indonesia',
-    phone: '(+62) 857-8123-8798',
+    phone: '(+62) 876-123-0000',
     mail: 'mazipanneh@gmail.com',
   },
   social: {
