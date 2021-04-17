@@ -41,7 +41,12 @@ const data = {
       location: 'Jakarta',
       title: 'Principal Engineer for Frontend',
       period: 'JUN 2019 - PRESENT',
-      jobdesc: [],
+      jobdesc: [
+        'Maintaining 20+ web apps in a single monorepo, mostly in React.js',
+        'Mentoring 80+ web engineers to write a better quality code',
+        'Part of the core team: mostly create tools to boost the developer productivity, doing research for new things on the web, gate-keeper for the core web platform initiatives',
+        'Create and maintain an in-house web performance monitoring dashboard'
+      ],
     },
     {
       company: 'Bizzy Indonesia',
@@ -49,11 +54,11 @@ const data = {
       title: 'Software Architect for Frontend',
       period: 'FEB 2019 - JUN 2019',
       jobdesc: [
-        'Split monolith frontend codebase into some different repository',
-        'Introduce many best practices in coding Vue.js and Nuxt.js',
-        'Creating many common utilities for easier sharing code that managed in monorepo using Lerna',
-        'Monitoring web performance',
-        'Actively sharing about how to be effective, good quality, and excellent software development process especially in frontend side.',
+        'Splitting the legacy big monolith frontend repo into micro repo based on the business domain',
+        'Introduce the coding best practices in Vue.js and Nuxt.js',
+        'Develop common utilities/helpers code',
+        'Setup the APM and Browser Monitoring using NewRelic',
+        'Initiate a weekly internal sharing session for all frontend engineers',
       ],
     },
     {
@@ -62,8 +67,9 @@ const data = {
       title: 'Software Development Engineer',
       period: 'JUL 2018 - FEB 2019',
       jobdesc: [
-        'Helping small team in transaction process to develop new features and fixing bugs',
-        'Setup and spread about unit test adoption in frontend codebase',
+        'Join with the transaction tribe, develop new features and kill the bugs in the transaction module',
+        'Working with Nuxt.js app in the monolith repo',
+        'Introducing, spread the awareness, and help to setup the unit test for the frontend codebase',
       ],
     },
     {
