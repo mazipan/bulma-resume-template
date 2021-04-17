@@ -67,7 +67,7 @@
 									<%= experience.location %> — <i><%= experience.title %></i>
 								</span>
 							</div>
-							<div class="is-size-7 tag is-link is-light"><%= experience.period %></div>
+							<div class="is-size-7 tag is-primary is-light"><%= experience.period %></div>
 							<% if (experience.jobdesc.length > 0) { %>
 							<ul style="list-style: disc; margin-left: 1em">
 								<% experience.jobdesc.forEach(function(job){ %>
@@ -93,7 +93,7 @@
 									<%= education.city %> — <i><%= education.degree %></i>
 								</span>
 							</div>
-							<div class="is-size-7 tag is-link is-light"><%= education.period %></div>
+							<div class="is-size-7 tag is-primary is-light"><%= education.period %></div>
 							<div><%= education.faculty %></div>
 						</div>
 						<% }); %>
@@ -112,7 +112,7 @@
 								—
 								<i><%= proj.company %></i>
 							</div>
-							<div class="is-size-7 tag is-link is-light"><%= proj.period %></div>
+							<div class="is-size-7 tag is-primary is-light"><%= proj.period %></div>
 						</div>
 						<% }); %>
 					</div>
